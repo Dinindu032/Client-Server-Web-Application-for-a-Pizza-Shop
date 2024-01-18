@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+   
+ <link rel="stylesheet" href="index.css">
+
+     
+    <script>
+
+let slideIndex = 0;
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+
+</script>
+</head>
+
+<body onLoad="showSlides()">
+ 
+  <div class="slideshow-container">
+<script>
+       const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.5
+        }s `;
+      }
+    });
+    burger.classList.toggle("toggle");
+  });
+  //
+};
+
+navSlide();
+          </script>
+	  <header><br>
+
+	  
+          <nav>
+  <div class="logo">
+	  
+	    <span class="section1"><img src="images/4_logo_14_11_2021_02.jpg" alt="" width="75" height="75"/></span>
+			 
+  </div>
+  <ul class="nav-links"> 
+      <a href="#">Home</a>
+      <a href="login.php">Sign In</a> 
+      <a href="myAccount.php">My Account</a>
+     <a href="#">All Items</a> 
+
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
+		  </header>
+<br><br><br><br>
+	  
+	   <div class="mySlides fade" style = "z-index: 1"><img  src="images/woman-eating-pizza-while-watching-tv.jpg" style="width:100%">
+   <br>
+  
+</div>
+ 
+    <div class="mySlides fade" style = "z-index: 1"><img  src="images/close-up-friends-with-tasty-pizza.jpg" style="width:100%">
+   <br>
+  
+</div>
+		 <div class="mySlides fade">
+   <img  src="images/close-up-smiley-friends-eating-pizza.jpg" style="width:100%">
+ <br>
+  
+</div>
+		 <div class="mySlides fade">
+   <img src="images/medium-shot-happy-people-eating-pizza.jpg" style="width:100%">
+   <br>
+  
+</div>
+		 <div class="mySlides fade">
+   <img src="images/medium-shot-smiley-kids-eating-pizza.jpg"style="width:100%">
+   <br>
+ 
+</div>
+	  
+	 <div class="content">
+		 <h1>DESIGN YOUR PIZZA</h1>
+		 <p>wiuekyaseyfubgeufhef</p>
+	  </div> 
+	
+	  <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+
+   <span class="section1" style= "z-index: 1000"><img src="images/18da2e9e-431e-45e9-93be-6482bb7f7121_1.f04f93c5a256e9be6d3fb4403eba4d1d.jpeg" alt="" width="200" height="200
+      "/></span>
+
+<div class="sections" style= "z-index: 1000">
+        <h3>We all know that it is  to recycle for the well-being of our planet.</h3>
+        <h2>Did you know that you could make serious money out of it?</h2>
+    <p> Your empty bottles, shoe boxes, and old mobile phones could be worth a fortune, and you could even cash in on empty cans and toilet roll tubes. When it comes to recycling, one man’s trash really is another man’s treasure!</p>
+    <h3> All you have to do is <a href="login.php" class=".nav-links">register</a> with us.</h3>
+    <p> If you like to sell any recycle item, you can post a classified advertisement. If you are looking for an item to buy, simply enter the material and click search. If you are interested in buying items, we will collect the items and deliver to your doorstep!! </p>
+    </div>
+
+    
+</div> 
+      
+    
+</body>
+</html>
